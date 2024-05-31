@@ -1,0 +1,17 @@
+{
+  "name": "asana-stalker",
+  "version": "1.0.0",
+  "description": "Looks for links to Asana in comments/descriptions on Github, then updates the Asana tasks with the url of the pull request, comment, etc where it was linked on Github.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "asana": "^3.0.7"
+  }
+}
