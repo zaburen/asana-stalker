@@ -1,9 +1,6 @@
 name: 'Asana Stalker'
 description: 'Will try to link any Asana tasks referenced in Github. Will comment on any Asana task URL found with a Github URL'
 inputs:
-  github-token:  # should be secrets.GITHUB_TOKEN
-    description: 'should be secrets.GITHUB_TOKEN'
-    required: true
   asana-pat:  # Personal Access Token for Asana
     description: 'Personal Access Token for Asana'
     required: true
