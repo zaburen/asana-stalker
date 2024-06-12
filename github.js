@@ -30,7 +30,7 @@ function getGithubEventsBody() {
         default:
             unsupportedEvent(eventName);
     }
-    return body;
+    return body.toString();
 }
 
 function getPullRequestBody() {
@@ -72,7 +72,7 @@ function getEventUrl() {
         default:
             unsupportedEvent(eventName);
     }
-    return url;
+    return url.toString();
 }
 
 function getPullRequestUrl() {
@@ -113,7 +113,7 @@ function getEventHrefText()  {
         default:
             unsupportedEvent(eventName);
     }
-    return hrefText;
+    return hrefText.toString();
 }
 
 function getPullRequestHrefText() {
