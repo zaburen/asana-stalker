@@ -6,7 +6,11 @@ const REGEX_PATTERN_FOR_ASANA_URLS = /https:\/\/app.asana.com\/\d+\/\d+\/\d+/g;
  * @returns List of Object { url: String, gid: Number }
  */
 function getAnyAsanaUrls(text) {
-    let urls = [...text.match(REGEX_PATTERN_FOR_ASANA_URLS)];
+    let urls = [];
+    let matches = text.match(REGEX_PATTERN_FOR_ASANA_URLS)
+    if (matches !== null) {
+        urls = [...text.match(REGEX_PATTERN_FOR_ASANA_URLS)];
+    }
     let urlAndGidList = urls.map((url) => {
         return convertUrlToGidAndUrl(url);
     });
