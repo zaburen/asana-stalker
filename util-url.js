@@ -14,7 +14,7 @@ function getAnyAsanaUrls(text) {
     let urlAndGidList = urls.map((url) => {
         return convertUrlToGidAndUrl(url);
     });
-    console.log(urlAndGidList);
+    console.log(`Matched Urls:\n${urlAndGidList}`);
     return urlAndGidList;
 }
 
